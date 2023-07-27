@@ -7,7 +7,8 @@ from logger import logging
 
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app =application
 model = pickle.load(open("flight_price_cbr.pkl", "rb"))
 
 @app.route("/")
